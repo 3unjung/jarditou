@@ -1,0 +1,234 @@
+/* Meta class */
+/* Make a visual on the tag */
+.betatest { border: solid fuchsia 1px;}
+/* Black text*/
+.black {color: black;}
+/* Green text */
+.green {color: #556B2F;}
+/* Price color */
+.price {color: red;}
+
+#something {
+    text-align: center;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    /* background-color:  rgba(38, 166, 91, 0.5);  */
+    /* effet transparence des bandes sur le côté */
+
+}
+
+/* Block parent */
+.main {
+    margin: auto;
+    width: 90%;
+    /* background-color:  rgba(245, 245, 245, 0.7); /!\ effet transparence du block principal */
+}
+
+/* ------------------------------------------------------------ */
+/* HEADER */
+footer{
+    border-radius: 10px;
+}
+
+header a:hover {
+    color: white;
+}
+
+/*  Set links navigation */
+.navbar .nav-link {
+    color: #fff;
+}
+
+/* ------------------------------------------------------------ */
+/* BODY */
+#errors404 p { color: #556B2F;}
+#errors404 h1  {color: green;}
+#comeback404 {color: green; }
+
+/* ------------------------------------------------------------ */
+/*  REGISTER */
+.container h1 {
+    color: green;
+}
+
+#haveaccount {
+    color: green;
+}
+
+.container label {
+    color: #6B8E23;
+}
+
+section h2 { color: green;}
+
+section p {
+    color: #556B2F;
+    font: 1.3em "Fira Sans", sans-serif;
+ }
+
+/* ADD PRODUCT */
+
+------------------------------------------------------------ */
+/* FOOTER */
+footer {
+    /* Set the fixed height of the footer here */
+    height: 0px
+}
+
+footer h4 {
+    text-align: center;
+}
+
+.footer h5, p, a {
+    color: #fff;
+    font: 1.1em "Fira Sans", sans-serif;
+}
+
+.footer a:hover {
+    color: white;
+    background-color: #556B2F;
+}
+
+.footer-container {
+    background-color: #1c3e00;
+
+}
+
+/* Logos Facebook & Github */
+.fab {
+    font-size: 30px;
+}
+
+/* Block Copyright */
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+}
+/* ------------------------------------------------------------ */
+ /* CARDS */
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-family: arial;
+  background-color:  rgba(245, 245, 245, 0.3);
+  padding: 1%;
+
+
+/*
+  margin-right: 1%;
+*/
+}
+.card-img-top {
+    height: 150px;
+    width: 75%;
+}
+ /* EXTRA CARD */
+ .bouton-card {
+    display: flex;
+}
+
+.bouton-card img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Extra BOUTON TRASH*/
+.bouton-trash {
+    height: 30px;
+    width: 30px;
+}
+
+.prix-titre {
+    display: flex;
+}
+
+#prix {
+    color: #556B2F;
+}
+
+/* FORMULAIRE */
+.form-group p {
+    color: #556B2F;
+}
+
+.form1 {
+    margin-right: 100px;
+}
+
+.form1, .form2{
+    border-radius: 10px;
+    border:1px dashed green;
+    background-color: #F5F5F5;
+    padding: 17px;
+}
+
+
+/* PRODUCT PAGE */
+.image-produit {
+    max-height: 450px;
+    max-width: 450px;
+
+}
+.produit {
+    padding: 15px;
+    background-color: #F5F5F5;
+}
+/*.fab {
+color: white;
+font-size: 35px;
+}*/
+
+/* PAGE PRODUIT */
+/*.titre-ref {
+    display: flex;
+}*/
+/*.flex{
+    display: inline-flex;
+}
+
+.left{
+    margin-left: 0;
+}
+
+.width-100
+{
+    width: 100%;
+}
+
+.buy{
+    margin-left: 50%;
+}*/
+
+/*.row{
+    flex-wrap: nowrap;
+}*/
+
+/* ------------------------------------------------------------ */
+/* RESPONSIVE */
+/* Bouton Boostrap */
+/* Icon menu responsive */
+.fa.fa-navicon {
+  color:white;
+  font-size: 25px;
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+    #banner-jarditou {
+        display: none;
+    }
+}
+
+
