@@ -5,6 +5,7 @@ namespace App\DataFixtures;
 use App\Entity\Categories;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
+use phpDocumentor\Reflection\Types\Null_;
 
 class CategoriesFixtures extends Fixture
 {
@@ -14,25 +15,12 @@ class CategoriesFixtures extends Fixture
     }
     public function load(ObjectManager $manager): void
     {
-        // $product = new Product();
-        // $manager->persist($product);
-
-        $parent = $this->createCategory('INTEL', null, manager: $manager);
-
-        $this->createCategory('Memoires', $parent, $manager);
-        $this->createCategory('Cartes Graphiques', $parent, $manager);
-        $this->createCategory('Mini-PC', $parent, $manager);
-
-        $manager->flush();
-    }
-
-    public function createCategory(string $name, Categories $parent = null,ObjectManager $manager)
-    {
         $category = new Categories();
-        $category->setName($name);
-        $category->setParent($parent);
+        $category->setParent(null);
+        $category->setName("Processeur");
         $manager->persist($category);
-
-        return $category;
+    
+        $manager->flush();
+    
     }
 }
